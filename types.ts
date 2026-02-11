@@ -1,4 +1,4 @@
-export type CategoryId = 'all' | 'glasses' | 'watches' | 'car_accessories' | 'misc';
+export type CategoryId = 'all' | 'streaming' | 'software' | 'design' | 'games';
 
 export interface Product {
   id: number;
@@ -18,6 +18,6 @@ export interface Category {
 
 export interface OrderFormState {
   fullName: string;
-  city: string;
   phone: string;
+  // City removed as it's digital delivery
 }

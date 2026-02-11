@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Search, Menu } from 'lucide-react';
+import { Zap, Search, Menu } from 'lucide-react';
 
 export const Navbar = () => {
   return (
@@ -8,19 +8,19 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="bg-primary text-white p-2 rounded-lg">
-            <ShoppingBag size={24} />
+            <Zap size={24} fill="currentColor" />
           </div>
           <h1 className="text-2xl font-bold text-gray-800 tracking-tight">
-            متجر<span className="text-primary">المغرب</span>
+            متجر<span className="text-primary">ديجيتال</span>
           </h1>
         </div>
 
-        {/* Desktop Nav - Hidden on mobile for simplicity in this demo */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6 text-gray-600 font-medium">
           <a href="#" className="hover:text-primary transition-colors">الرئيسية</a>
-          <a href="#products" className="hover:text-primary transition-colors">المنتجات</a>
-          <a href="#about" className="hover:text-primary transition-colors">من نحن</a>
-          <a href="#contact" className="hover:text-primary transition-colors">اتصل بنا</a>
+          <a href="#products" className="hover:text-primary transition-colors">الخدمات</a>
+          <a href="#about" className="hover:text-primary transition-colors">طريقة التفعيل</a>
+          <a href="#contact" className="hover:text-primary transition-colors">الدعم الفني</a>
         </div>
 
         {/* Action Icons */}
